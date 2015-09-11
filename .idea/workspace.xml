@@ -41,10 +41,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="app.scss" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="app.scss" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resources/assets/sass/app.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="6" selection-start="109" selection-end="109" vertical-scroll-proportion="0.14416476" vertical-offset="0" max-vertical-offset="874">
+            <state line="30" column="0" selection-start="395" selection-end="395" vertical-scroll-proportion="-23.333334" vertical-offset="0" max-vertical-offset="756">
               <folding />
             </state>
           </provider>
@@ -86,10 +86,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="welcome.blade.php" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="welcome.blade.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/resources/views/welcome.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="8" column="0" selection-start="312" selection-end="312" vertical-scroll-proportion="-6.2222223" vertical-offset="0" max-vertical-offset="504">
+            <state line="13" column="44" selection-start="435" selection-end="435" vertical-scroll-proportion="0.31235698" vertical-offset="0" max-vertical-offset="874">
               <folding />
             </state>
           </provider>
@@ -117,8 +117,8 @@
         <option value="$PROJECT_DIR$/composer.json" />
         <option value="$PROJECT_DIR$/resources/assets/sass/main.scss" />
         <option value="$PROJECT_DIR$/gulpfile.js" />
-        <option value="$PROJECT_DIR$/resources/views/welcome.blade.php" />
         <option value="$PROJECT_DIR$/resources/assets/sass/app.scss" />
+        <option value="$PROJECT_DIR$/resources/views/welcome.blade.php" />
       </list>
     </option>
   </component>
@@ -592,16 +592,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/welcome.blade.php">
+    <entry file="file://$PROJECT_DIR$/resources/assets/sass/app.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="0" selection-start="312" selection-end="312" vertical-scroll-proportion="-6.2222223" vertical-offset="0" max-vertical-offset="504">
+        <state line="30" column="0" selection-start="395" selection-end="395" vertical-scroll-proportion="-23.333334" vertical-offset="0" max-vertical-offset="756">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/assets/sass/app.scss">
+    <entry file="file://$PROJECT_DIR$/resources/views/welcome.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="6" selection-start="109" selection-end="109" vertical-scroll-proportion="0.14416476" vertical-offset="0" max-vertical-offset="874">
+        <state line="13" column="44" selection-start="435" selection-end="435" vertical-scroll-proportion="0.31235698" vertical-offset="0" max-vertical-offset="874">
           <folding />
         </state>
       </provider>
