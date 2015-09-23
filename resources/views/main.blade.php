@@ -143,14 +143,27 @@
         <div class="container">
             <h2 class="sub-heading">Contact Us</h2>
 
-            <form class="contact-form">
+
+                <div class="alerts">
+                    <ul>
+
+                    </ul>
+                </div>
+
+
+            <form class="contact-form" method="post" action="/">
+                <input type="hidden" name="_token" value="{{ csrf_token() }}">
                 <div class="form-group">
-                    <label for="exampleInputEmail1">Email address</label>
-                    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
+                    <label for="email-input">Email address</label>
+                    <input type="email" class="form-control email" id="email-input" name="email" placeholder="Email">
                 </div>
                 <div class="form-group">
-                    <label for="exampleInputMessage1">Message</label>
-                    <textarea class="form-control" name="exampleInputMessage1" placeholder="Message"></textarea>
+                    <label for="phone-input">Phone </label>
+                    <input type="text" class="form-control phone" id="phone-input" name="phone" placeholder="Phone (Optional)">
+                </div>
+                <div class="form-group">
+                    <label for="message-input">Message</label>
+                    <textarea class="form-control message" id="message-input" name="message" placeholder="Message"></textarea>
                 </div>
                 <button type="submit" class="btn btn-default">Submit</button>
             </form>
@@ -169,6 +182,9 @@
 
         <!-- Latest compiled and minified JavaScript -->
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+        <!-- Custom JS file -->
+        <script src="{{asset('js/custom.js')}}"></script>
     </footer>
 
     </body>

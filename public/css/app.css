@@ -76,6 +76,11 @@ body {
       text-shadow: 2px 4px 3px rgba(0, 0, 0, 0.3);
       font-size: 42px;
       text-align: center; }
+    body .contact-wrapper .alerts {
+      width: 25%;
+      margin: auto;
+      font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+      margin-bottom: 15px; }
     body .contact-wrapper .contact-form {
       width: 40%;
       margin: auto;
