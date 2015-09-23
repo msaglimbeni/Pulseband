@@ -5,20 +5,144 @@ body {
   margin: 0;
   padding: 0;
   width: 100%;
-  display: table;
   font-weight: 100;
   font-family: 'Lato'; }
-
-.container {
-  text-align: center;
-  display: table-cell;
-  vertical-align: middle; }
-
-.content {
-  text-align: center;
-  display: inline-block; }
-
-.title {
-  font-size: 96px; }
+  body .navbar .navbar-header {
+    margin-right: 35px; }
+    body .navbar .navbar-header a {
+      color: #fff;
+      font-size: 32px;
+      font-weight: normal;
+      padding: 16px 5px 8px;
+      display: block;
+      font-family: 'Special Elite', cursive; }
+    body .navbar .navbar-header a:hover {
+      text-decoration: none; }
+  body .navbar #navbar ul.nav li a {
+    color: #22bbff;
+    padding: 25px 20px 27px 20px;
+    font-weight: bold;
+    font-size: 20px; }
+  body .navbar .email {
+    float: right;
+    color: #22bbff;
+    font-size: 20px;
+    padding: 20px 0;
+    font-weight: bold; }
+  body h1, body h2, body h3, body h4, body h5 {
+    font-weight: bold; }
+  body .clear {
+    clear: both; }
+  body .sub-heading {
+    margin-bottom: 25px;
+    text-transform: uppercase; }
+  body .big-image {
+    background-image: url("../images/cover.jpg");
+    background-size: cover;
+    background-position: 0 60%;
+    height: 960px;
+    position: relative; }
+  body .social-wrapper, body .gallery-wrapper, body .contact-wrapper {
+    padding: 35px 0; }
+  body .social-wrapper {
+    background-image: url("../images/carbon_bg.png");
+    color: white;
+    min-height: 300px; }
+  body .gallery-wrapper {
+    background-image: url("../images/black_bg.png");
+    min-height: 300px; }
+    body .gallery-wrapper .gallery .image {
+      width: 350px;
+      height: 250px;
+      float: left;
+      margin: 0 60px;
+      border: 3px solid white;
+      background-size: cover; }
+    body .gallery-wrapper .gallery .image1 {
+      background-image: url("../images/gal-1.jpg"); }
+    body .gallery-wrapper .gallery .image2 {
+      background-image: url("../images/gal-2.jpg"); }
+    body .gallery-wrapper .gallery .image3 {
+      background-image: url("../images/gal-3.jpg"); }
+    body .gallery-wrapper .gallery .image4 {
+      background-image: url("../images/gal-4.jpg"); }
+  body .contact-wrapper {
+    color: #000;
+    min-height: 300px;
+    text-shadow: 2px 4px 3px rgba(0, 0, 0, 0.3); }
+    body .contact-wrapper .sub-heading {
+      font-family: 'Special Elite', cursive;
+      font-weight: normal;
+      text-shadow: 2px 4px 3px rgba(0, 0, 0, 0.3);
+      font-size: 42px;
+      text-align: center; }
+    body .contact-wrapper .alerts {
+      width: 25%;
+      margin: auto;
+      font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+      margin-bottom: 15px; }
+    body .contact-wrapper .contact-form {
+      width: 40%;
+      margin: auto;
+      text-align: center; }
+      body .contact-wrapper .contact-form .form-control, body .contact-wrapper .contact-form label {
+        font-size: 16px;
+        font-weight: bold; }
+      body .contact-wrapper .contact-form button.btn {
+        background-color: #55aadd;
+        color: white;
+        font-size: 16px; }
+  body footer {
+    background-color: black;
+    color: white;
+    padding: 25px 0;
+    text-align: center; }
+  body .song-player {
+    border: 1px solid white;
+    margin-top: 100px; }
+    body .song-player h3 {
+      margin: 10px 10px;
+      text-align: center; }
+  body .shows-wrapper {
+    position: relative; }
+  body .widget.upcoming {
+    background-image: url("../images/carbon_bg.png");
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px; }
+  body .show-hanger {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    color: white;
+    font-weight: bold; }
+    body .show-hanger .left-contain, body .show-hanger .right-contain, body .show-hanger .shows {
+      float: left; }
+    body .show-hanger .left-contain, body .show-hanger .right-contain {
+      width: 8%; }
+      body .show-hanger .left-contain .left-arrow, body .show-hanger .left-contain .right-arrow, body .show-hanger .right-contain .left-arrow, body .show-hanger .right-contain .right-arrow {
+        font-size: 48px;
+        font-weight: bold;
+        text-align: center;
+        padding: 25px 0;
+        display: block; }
+    body .show-hanger .shows {
+      width: 84%;
+      overflow: hidden; }
+      body .show-hanger .shows .shows-strip {
+        width: 2000px; }
+      body .show-hanger .shows .show {
+        width: 315px;
+        padding: 20px 5px;
+        float: left;
+        margin-right: 10px;
+        font-family: 'Special Elite', cursive; }
+        body .show-hanger .shows .show .date, body .show-hanger .shows .show .time, body .show-hanger .shows .show .location {
+          font-size: 18px;
+          font-weight: normal;
+          text-align: center;
+          border-right: 1px solid white;
+          padding-right: 20px; }
+      body .show-hanger .shows .upcoming-heading {
+        text-align: center; }
 
 /*# sourceMappingURL=app.css.map */
