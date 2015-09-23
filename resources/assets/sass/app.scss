@@ -8,23 +8,226 @@ body {
   margin: 0;
   padding: 0;
   width: 100%;
-  display: table;
   font-weight: 100;
   font-family: 'Lato';
-}
 
-.container {
-  text-align: center;
-  display: table-cell;
-  vertical-align: middle;
-}
 
-.content {
-  text-align: center;
-  display: inline-block;
-}
+  //HEADER
 
-.title {
-  font-size: 96px;
-}
+  .navbar{
+    .navbar-header{
+      margin-right:35px;
+      a{
+        color:#fff;
+        font-size:32px;
+        font-weight: normal;
+        padding:16px 5px 8px;
+        display: block;
+        font-family: 'Special Elite', cursive;
+      }
+      a:hover{
+        text-decoration: none;
+      }
+    }
 
+    #navbar{
+      ul.nav{
+        li{
+          a{
+            color:#22bbff;
+            padding:25px 20px 27px 20px;
+            font-weight:bold;
+            font-size:20px;
+          }
+        }
+      }
+    }
+
+    .email{
+      float:right;
+      color:#22bbff;
+      font-size:20px;
+      padding:20px 0;
+      font-weight: bold;
+    }
+  }
+
+
+  //GENERAL
+  h1,h2,h3,h4,h5{
+    font-weight: bold;
+  }
+
+  .clear{
+    clear:both;
+  }
+
+  .sub-heading{
+    margin-bottom:25px;
+    text-transform: uppercase;
+  }
+
+  //MAIN PAGE
+
+  .big-image{
+    background-image:url('../images/cover.jpg');
+    background-size:cover;
+    background-position:0 60%;
+    height:960px;
+    position: relative;
+  }
+
+  .social-wrapper, .gallery-wrapper, .contact-wrapper{
+    padding:35px 0;
+  }
+
+  .social-wrapper{
+    background-image:url("../images/carbon_bg.png");
+    color:white;
+    min-height: 300px;
+  }
+
+  .gallery-wrapper{
+    background-image: url('../images/black_bg.png');
+    min-height: 300px;
+
+    .gallery{
+
+      .image{
+        width:350px;
+        height:250px;
+        float:left;
+        margin:0 60px;
+        border:3px solid white;
+        background-size:cover;
+      }
+
+      .image1{
+        background-image: url('../images/gal-1.jpg');
+      }
+
+      .image2{
+        background-image: url('../images/gal-2.jpg');
+      }
+
+      .image3{
+        background-image: url('../images/gal-3.jpg');
+      }
+
+      .image4{
+        background-image: url('../images/gal-4.jpg');
+      }
+    }
+  }
+
+  .contact-wrapper{
+    color:#000;
+    min-height: 300px;
+    text-shadow:2px 4px 3px rgba(0,0,0,0.3);
+
+    .sub-heading{
+      font-family: 'Special Elite', cursive;
+      font-weight: normal;
+      text-shadow:2px 4px 3px rgba(0,0,0,0.3);
+      font-size:42px;
+      text-align: center;
+    }
+
+    .contact-form{
+      width:40%;
+      margin:auto;
+      text-align: center;
+
+      .form-control, label{
+        font-size:16px;
+        font-weight: bold;
+      }
+
+      button.btn{
+        background-color:#55aadd;
+        color:white;
+        font-size:16px;
+      }
+    }
+  }
+
+  footer{
+    background-color:black;
+    color:white;
+    padding:25px 0;
+    text-align: center;
+  }
+
+  .song-player{
+    border:1px solid white;
+    margin-top:100px;
+
+    h3{
+      margin:10px 10px;
+      text-align: center;
+    }
+  }
+
+  .shows-wrapper{
+    position:relative;
+  }
+
+  .widget.upcoming{
+    background-image:url('../images/carbon_bg.png');
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+  }
+
+  .show-hanger{
+    position:absolute;
+    bottom:0;
+    width:100%;
+    color:white;
+    font-weight: bold;
+
+    .left-contain, .right-contain, .shows{
+      float:left;
+    }
+
+    .left-contain, .right-contain{
+      width:8%;
+
+      .left-arrow, .right-arrow{
+        font-size:48px;
+        font-weight:bold;
+        text-align:center;
+        padding:25px 0;
+        display: block;
+      }
+    }
+
+    .shows{
+      width:84%;
+      overflow: hidden;
+
+      .shows-strip{
+        width:2000px;
+      }
+
+      .show{
+        width:315px;
+        padding:20px 5px;
+        float:left;
+        margin-right:10px;
+        font-family: 'Special Elite', cursive;
+
+        .date, .time, .location{
+          font-size:18px;
+          font-weight:normal;
+          text-align:center;
+          border-right:1px solid white;
+          padding-right:20px;
+        }
+      }
+
+      .upcoming-heading{
+        text-align: center;
+      }
+    }
+  }
+}
