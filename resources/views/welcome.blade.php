@@ -17,11 +17,41 @@
         <link rel="stylesheet" type="text/css" href="{{asset('css/app.css')}}" >
         <link href="https://fonts.googleapis.com/css?family=Lato:100" rel="stylesheet" type="text/css">
         <link href='https://fonts.googleapis.com/css?family=Special+Elite' rel='stylesheet' type='text/css'>
-
-
     </head>
 
     <body>
+    <script>
+        window.fbAsyncInit = function() {
+            FB.init({
+                appId      : '1644979329075169',
+                xfbml      : true,
+                version    : 'v2.4'
+            });
+        };
+
+        (function(d, s, id){
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) {return;}
+            js = d.createElement(s); js.id = id;
+            js.src = "//connect.facebook.net/en_US/sdk.js";
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
+    </script>
+
+    <?php
+        require_once '../vendor/facebook/src/Facebook/autoload.php';
+
+        $fb = new \Facebook\Facebook([
+            'app_id' => '1644979329075169',
+            'app_secret' => 'c38f1ad0839e0ab10cc8c22c43d1c110',
+            'default_graph_version' => 'v2.2',
+            'default_access_token' => 'CAAXYGZAiShZBEBANdRPSQLttM6Ukl7yr5CVQqYQI789L0NrDi5yMcJrrRAHtZCYlQq4bp6oPwHDsbIjydPudHGyVRhWjDRaMOo2Src7tg5incrhXE8shePvIHrBlrXCe7RxZBm7XC70eP2ZCuLo1KXX3QXtnyw8FgRR7KOON7NdqvlH38uae5yndRa0wFgXGCkBJLm5ZCAs0vd7XtyCbEU'
+        ]);
+
+        echo '<pre>';
+            print_r($fb->get('/1433601266925408/feed'));
+        echo '</pre>';
+    ?>
 
     <header>
         <nav class="navbar navbar-inverse navbar-fixed-top">
@@ -105,6 +135,7 @@
 
                     <div class="col-lg-6">
                         <h3>Facebook Widget</h3>
+
                     </div>
                     <div class="col-lg-6">
                         <h3>YouTube Widget</h3>
