@@ -34,7 +34,7 @@ body {
   body .clear {
     clear: both; }
   body .sub-heading {
-    margin-bottom: 25px;
+    margin-bottom: 15px;
     text-transform: uppercase; }
   body .anchor {
     position: relative;
@@ -45,6 +45,13 @@ body {
     background-position: 0 60%;
     height: 960px;
     position: relative; }
+  body div.widget.facebook div.facebook-posts {
+    font-family: 'Special Elite', cursive;
+    margin-top: 30px; }
+    body div.widget.facebook div.facebook-posts div.feed-content.fb {
+      font-size: 18px; }
+      body div.widget.facebook div.facebook-posts div.feed-content.fb div.fb-msg {
+        margin: 10px 0px; }
   body .social-wrapper, body .gallery-wrapper, body .contact-wrapper, body .bios-wrapper {
     padding: 35px 0; }
   body .social-wrapper {
@@ -140,7 +147,7 @@ body {
     text-align: center; }
   body .song-player {
     border: 1px solid white;
-    margin-top: 100px; }
+    margin-top: 20px; }
     body .song-player h3 {
       margin: 10px 10px;
       text-align: center; }
