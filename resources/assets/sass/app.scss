@@ -63,7 +63,7 @@ body {
   }
 
   .sub-heading{
-    margin-bottom:25px;
+    margin-bottom:15px;
     text-transform: uppercase;
   }
 
@@ -82,6 +82,22 @@ body {
     background-position:0 60%;
     height:960px;
     position: relative;
+  }
+
+  div.widget.facebook{
+
+    div.facebook-posts{
+      font-family: 'Special Elite', cursive;
+      margin-top: 30px;
+
+      div.feed-content.fb{
+        font-size: 18px;
+
+        div.fb-msg{
+          margin: 10px 0px;
+        }
+      }
+    }
   }
 
   .social-wrapper, .gallery-wrapper, .contact-wrapper, .bios-wrapper{
@@ -246,7 +262,7 @@ body {
 
   .song-player{
     border:1px solid white;
-    margin-top:100px;
+    margin-top:20px;
 
     h3{
       margin:10px 10px;
