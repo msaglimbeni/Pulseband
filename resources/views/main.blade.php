@@ -115,7 +115,7 @@
                             $access_token = '1599822940260368|L6prZhxUoUQR4ldALq5HoLCoKbU';
                             $posts = '';
 
-                            $json_object = @file_get_contents('https://graph.facebook.com/'.$page_id.'/posts?access_token='.$access_token);
+                            $json_object = file_get_contents('https://graph.facebook.com/'.$page_id.'/posts?access_token='.$access_token);
 
                             $fb_data = json_decode($json_object);
 
