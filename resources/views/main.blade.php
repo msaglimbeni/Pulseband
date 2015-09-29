@@ -138,7 +138,7 @@
                                     <div class="left">
                                         <div class="content">
                                             <h2>Patrick Shea</h2>
-                                            <h3>Lead Vocals/Guitar</h3>
+                                            <h3>Vocals/Guitar</h3>
 
                                             <p>
                                                 Pat started playing on a beat-up old classical guitar with steel strings just before he started high school and it wasn't long before he discovered he had an inherent love for playing instruments. He has played guitar and bass in both cover bands and originals but he always found himself singing for the projects he was in.
@@ -190,7 +190,7 @@
                                     <div class="left">
                                         <div class="content">
                                             <h2>Max Saglimbeni</h2>
-                                            <h3>Bass Guitar/Back-up Vocals</h3>
+                                            <h3>Bass/Back-up Vocals</h3>
 
                                             <p>
                                                 Max was introduced to the bass guitar from his father, who had played bass throughout most of his life. Max began to play when he was old enough to grasp the instrument, and has been playing ever since. Max grew up playing a lot of progressive music. He was introduced to bands like Pink Floyd and Rush at a very young age and found the songs challenging, which allowed him to spend a lot of time on the instrument learning how to play.
@@ -221,11 +221,11 @@
                                             <h3>Guitar</h3>
 
                                             <p>
-                                                Trevor began to play Guitar when he was in grade 7. Listening to popular pop-punk groups like Blink 182 and Sum 41, Trevor's interest in Guitar grew rapidly and has stuck with him ever since. As he grew older, his interests had shifted to Progressive Rock, and Classic Rock.
+                                                Trevor began to play Guitar when he was 14. Listening to popular rock groups like Blink 182 and Sum 41, Trevor's interest in guitar rapidly grew and has stuck with him ever since. Over time his interests shifted to Progressive and Classic Rock.
 
-                                                Listening to groups like The Beatles, and Led Zeppelin, Trevor had developed his musical talents further, and has been on a steady incline ever since. Throughout his college experience, he has expanded his musical horizons into the Motown scene and the idea of being in a cover band was always of interest.
+                                                Listening to groups like The Beatles, Led Zeppelin and Pink Floyd, Trevor developed his musical talents further and has been on a steady incline ever since. During his college experience Trevor expanded his musical horizons and crossed over into the Motown scene.
 
-                                                Trevor has been playing with band members Max and Marcus since he began to play Guitar, and has formed great chemistry with vocalist Patrick Shea.
+                                                Trevor has been playing with band mates Max and Marcus since he began to play guitar, and has formed great chemistry with vocalist Patrick Shea.
                                             </p>
                                         </div>
                                     </div>
