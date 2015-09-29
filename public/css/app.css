@@ -36,13 +36,16 @@ body {
   body .sub-heading {
     margin-bottom: 25px;
     text-transform: uppercase; }
+  body .anchor {
+    position: relative;
+    bottom: 80px; }
   body .big-image {
     background-image: url("../images/cover.jpg");
     background-size: cover;
     background-position: 0 60%;
     height: 960px;
     position: relative; }
-  body .social-wrapper, body .gallery-wrapper, body .contact-wrapper {
+  body .social-wrapper, body .gallery-wrapper, body .contact-wrapper, body .bios-wrapper {
     padding: 35px 0; }
   body .social-wrapper {
     background-image: url("../images/carbon_bg.png");
@@ -91,7 +94,45 @@ body {
       body .contact-wrapper .contact-form button.btn {
         background-color: #55aadd;
         color: white;
-        font-size: 16px; }
+        font-size: 16px;
+        font-weight: bold; }
+  body .bios-wrapper {
+    min-height: 300px;
+    background-color: #335566;
+    color: white; }
+    body .bios-wrapper .bios-gallery {
+      position: relative;
+      margin-bottom: 20px; }
+      body .bios-wrapper .bios-gallery .flex-control-nav a.flex-active {
+        background-color: #55aadd; }
+    body .bios-wrapper .bio {
+      margin-bottom: 45px; }
+      body .bios-wrapper .bio .left, body .bios-wrapper .bio .right {
+        float: left; }
+      body .bios-wrapper .bio .left {
+        width: 70%;
+        padding-right: 30px; }
+        body .bios-wrapper .bio .left p {
+          line-height: 22px;
+          font-size: 16px;
+          text-align: justify; }
+      body .bios-wrapper .bio .right {
+        width: 30%;
+        padding-left: 30px; }
+        body .bios-wrapper .bio .right .photo-container .photo {
+          border: 3px solid white; }
+        body .bios-wrapper .bio .right .photo-container .photo {
+          height: 300px;
+          background-size: cover;
+          background-repeat: no-repeat; }
+        body .bios-wrapper .bio .right .photo-container .photo.pat {
+          background-image: url("../images/bios/pat.jpg"); }
+        body .bios-wrapper .bio .right .photo-container .photo.marc {
+          background-image: url("../images/bios/marc.jpg"); }
+        body .bios-wrapper .bio .right .photo-container .photo.max {
+          background-image: url("../images/bios/max.jpg"); }
+        body .bios-wrapper .bio .right .photo-container .photo.trev {
+          background-image: url("../images/bios/trev.jpg"); }
   body footer {
     background-color: black;
     color: white;

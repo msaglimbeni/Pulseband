@@ -1,5 +1,18 @@
 $(document).ready(function() {
 
+
+    $('.bios-gallery').flexslider({
+        directionNav:true,
+        controlNav:true,
+        slideshow:true,
+        slideshowSpeed:4000,
+        animation:"slide",
+        pauseOnHover: true
+    });
+
+
+    //FORM
+
    $('.contact-form').submit(function(event) {
       event.preventDefault();
 
@@ -11,7 +24,6 @@ $(document).ready(function() {
           alertBox = $('.alerts'),
           alerts = alertBox.children('ul');
 
-
       $.ajax({
          method: "POST",
          url: url,
@@ -20,10 +32,7 @@ $(document).ready(function() {
          statusCode: {
             //laravel
             422: function(data) {
-               //console.log(data);
-
                alertBox.addClass('alert alert-danger');
-
                alerts.empty();
                alertBox.children('p').remove();
                $.each(data.responseJSON, function(index, value) {
@@ -39,7 +48,6 @@ $(document).ready(function() {
              alertBox.append('<p>' + data.message + '</p>');
       });
 
-
-
    });
+
 });

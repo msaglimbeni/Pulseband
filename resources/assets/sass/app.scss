@@ -67,6 +67,13 @@ body {
     text-transform: uppercase;
   }
 
+  //ANCHORS
+
+  .anchor{
+    position:relative;
+    bottom:80px;
+  }
+
   //MAIN PAGE
 
   .big-image{
@@ -77,7 +84,7 @@ body {
     position: relative;
   }
 
-  .social-wrapper, .gallery-wrapper, .contact-wrapper{
+  .social-wrapper, .gallery-wrapper, .contact-wrapper, .bios-wrapper{
     padding:35px 0;
   }
 
@@ -155,6 +162,77 @@ body {
         background-color:#55aadd;
         color:white;
         font-size:16px;
+        font-weight:bold;
+      }
+    }
+  }
+
+  .bios-wrapper{
+    min-height:300px;
+    background-color:#335566;
+    color:white;
+
+    .bios-gallery{
+      position: relative;
+      margin-bottom:20px;
+
+      .flex-control-nav{
+        a.flex-active{
+          background-color:#55aadd;
+        }
+      }
+    }
+
+    .bio{
+      margin-bottom:45px;
+
+      .left, .right{
+        float:left;
+      }
+
+      .left{
+        width:70%;
+        padding-right:30px;
+
+        p{
+          line-height:22px;
+          font-size:16px;
+          text-align:justify;
+        }
+      }
+
+      .right{
+        width:30%;
+        padding-left:30px;
+
+        .photo-container{
+
+          .photo{
+            border:3px solid white;
+          }
+
+          .photo{
+            height:300px;
+            background-size:cover;
+            background-repeat: no-repeat;
+          }
+
+          .photo.pat{
+            background-image:url('../images/bios/pat.jpg');
+          }
+
+          .photo.marc{
+            background-image:url('../images/bios/marc.jpg');
+          }
+
+          .photo.max{
+            background-image:url('../images/bios/max.jpg');
+          }
+
+          .photo.trev{
+            background-image:url('../images/bios/trev.jpg');
+          }
+        }
       }
     }
   }
