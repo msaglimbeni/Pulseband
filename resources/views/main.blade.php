@@ -20,6 +20,7 @@
         <link href="https://fonts.googleapis.com/css?family=Lato:100" rel="stylesheet" type="text/css">
         <link href='https://fonts.googleapis.com/css?family=Special+Elite' rel='stylesheet' type='text/css'>
 
+        <script src="//connect.soundcloud.com/sdk-2.0.0.js"></script>
 
     </head>
 
@@ -150,7 +151,9 @@
 
                     <div class="col-lg-12">
                         <div class="song-player">
-                            <h3>Song Player</h3>
+                            <div class="center-box">
+                                <h2 class="sub-heading">We're also on <a href="https://soundcloud.com/pulseband-2" class="big-link" target="_blank">SoundCloud</a></h2>
+                            </div>
                         </div>
                     </div>
                 </div>

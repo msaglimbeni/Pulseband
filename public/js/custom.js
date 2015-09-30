@@ -30,6 +30,20 @@ $(document).ready(function() {
 
         });
 
+    //SOUNDCLOUD
+
+    SC.initialize({
+        client_id: "45d3103837ca07bf2c216ad5eaab651c"
+    });
+
+    SC.get('/users/pulseband-2/tracks?limit=4', function(response, error) {
+        $.each(response, function(index, soundcloud){
+            SC.oEmbed(soundcloud.uri, function(response) {
+                $('.song-player').append('<div class="song">'+response.html+'</div>');
+            });
+        });
+    });
+
     //FORM
 
    $('.contact-form').submit(function(event) {
