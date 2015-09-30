@@ -1,6 +1,7 @@
 $(document).ready(function() {
 
 
+
     $('.bios-gallery').flexslider({
         directionNav:true,
         controlNav:true,
@@ -46,7 +47,7 @@ $(document).ready(function() {
 
     //FORM
 
-   $('.contact-form').submit(function(event) {
+    $('.contact-form').submit(function(event) {
       event.preventDefault();
 
       var $form = $( this ),
@@ -81,6 +82,53 @@ $(document).ready(function() {
              alertBox.append('<p>' + data.message + '</p>');
       });
 
-   });
+    });
 
+
+    //SMOOTHSCROLLER
+
+    $('.nav-anchor').each(function(index, div){
+       $(div).click(function() {
+
+           $('html, body').animate({
+               scrollTop: $($(div).data('id')).offset().top,
+               easing: "swing"
+           }, 1000) ;
+
+       });
+    });
+
+
+    //SCROLL ACTIVE
+    //stackoverflow
+
+    // Cache selectors
+    var topMenu = $("#navbar"),
+        topMenuHeight = topMenu.outerHeight()+15,
+    // All list items
+        menuItems = topMenu.find("a"),
+    // Anchors corresponding to menu items
+        scrollItems = menuItems.map(function(){
+            var item = $($(this).data("id"));
+            if (item.length) { return item; }
+        });
+
+    // Bind to scroll
+    $(window).scroll(function(){
+        // Get container scroll position
+        var fromTop = $(this).scrollTop()+topMenuHeight;
+
+        // Get id of current scroll item
+        var cur = scrollItems.map(function(){
+            if ($(this).offset().top < fromTop)
+                return this;
+        });
+        // Get the id of the current element
+        cur = cur[cur.length-1];
+        var id = cur && cur.length ? cur[0].id : "";
+        // Set/remove active class
+        menuItems
+            .parent().removeClass("active")
+            .end().filter("[data-id=#"+id+"]").parent().addClass("active");
+    });
 });

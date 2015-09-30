@@ -9,20 +9,26 @@ body {
   font-family: 'Lato'; }
   body .navbar .navbar-header {
     margin-right: 35px; }
-    body .navbar .navbar-header a {
-      color: #fff;
-      font-size: 32px;
-      font-weight: normal;
+    body .navbar .navbar-header a.brand {
       padding: 16px 5px 8px;
       display: block;
-      font-family: 'Special Elite', cursive; }
+      background-image: url("../images/pulse-logo.png");
+      background-size: cover;
+      width: 100px;
+      height: 70px;
+      background-position: 100% 46%; }
     body .navbar .navbar-header a:hover {
       text-decoration: none; }
   body .navbar #navbar ul.nav li a {
-    color: #22bbff;
-    padding: 25px 20px 27px 20px;
+    color: white;
+    padding: 25px 25px 27px;
     font-weight: bold;
     font-size: 20px; }
+  body .navbar #navbar ul.nav li a:hover {
+    cursor: pointer;
+    color: #22bbff; }
+  body .navbar #navbar ul.nav li.active a {
+    color: #22bbff; }
   body .navbar .email {
     float: right;
     color: #22bbff;
@@ -42,6 +48,19 @@ body {
   body .anchor {
     position: relative;
     bottom: 80px; }
+  body h1.band-name {
+    position: absolute;
+    left: 0;
+    right: 0;
+    color: white;
+    text-align: center;
+    margin-top: 650px;
+    font-size: 130px;
+    font-weight: normal;
+    font-family: 'Special Elite', cursive;
+    letter-spacing: 38px;
+    text-transform: uppercase;
+    text-shadow: 0 4px 3px rgba(0, 0, 0, 0.4), 0 8px 13px rgba(0, 0, 0, 0.1), 0 18px 23px rgba(0, 0, 0, 0.1); }
   body .big-image {
     background-image: url("../images/cover.jpg");
     background-size: cover;

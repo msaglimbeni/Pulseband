@@ -20,8 +20,6 @@
         <link href="https://fonts.googleapis.com/css?family=Lato:100" rel="stylesheet" type="text/css">
         <link href='https://fonts.googleapis.com/css?family=Special+Elite' rel='stylesheet' type='text/css'>
 
-        <script src="//connect.soundcloud.com/sdk-2.0.0.js"></script>
-
     </head>
 
     <body>
@@ -36,15 +34,14 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="brand" href="#">Pulse</a>
+                    <a class="brand"></a>
                 </div>
                 <div id="navbar" class="collapse navbar-collapse">
                     <ul class="nav navbar-nav">
-                        <li class="active"><a href="#">Home</a></li>
-                        <li><a href="#media">Media</a></li>
-                        <li><a href="#bios">Bios</a></li>
-                        <li><a href="#gallery">Gallery</a></li>
-                        <li><a href="#contact">Contact</a></li>
+                        <li class="active"><a data-id="#home" class="nav-anchor">Home</a></li>
+                        <li><a data-id="#media" class="nav-anchor">Media</a></li>
+                        <li><a data-id="#bios" class="nav-anchor">Bios</a></li>
+                        <li><a data-id="#contact" class="nav-anchor">Contact</a></li>
                     </ul>
 
                     <div class="email">contact@pulseband.ca</div>
@@ -53,7 +50,8 @@
         </nav>
     </header>
 
-    <div class="big-image">
+    <div class="big-image" id="home">
+        <h1 class="band-name">Pulse</h1>
         <div class="show-hanger">
             <div class="container widget upcoming">
                 <div class="left-contain">
@@ -288,7 +286,7 @@
     </section>
 
     <section class="gallery-wrapper">
-        <div id="gallery" class="anchor"></div>
+        <div id="contact" class="anchor"></div>
         <div class="gallery">
             <div class="image1 image">
 
@@ -308,7 +306,6 @@
     </section>
 
     <section class="contact-wrapper">
-        <div id="contact" class="anchor"></div>
         <div class="container">
             <h2 class="sub-heading">Contact Us</h2>
 
@@ -355,6 +352,9 @@
         <!-- Custom JS file -->
         <script src="{{asset('js/custom.js')}}"></script>
         <script src="{{asset('js/jquery.flexslider.js')}}"></script>
+
+        <!-- Soundcloud SDK -->
+        <script src="//connect.soundcloud.com/sdk-2.0.0.js"></script>
     </footer>
 
     </body>
