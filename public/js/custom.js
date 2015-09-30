@@ -5,11 +5,30 @@ $(document).ready(function() {
         directionNav:true,
         controlNav:true,
         slideshow:true,
-        slideshowSpeed:4000,
         animation:"slide",
         pauseOnHover: true
     });
 
+    //YOUTUBE
+
+    $.ajax( {
+        method: "GET",
+        url: "https://www.googleapis.com/youtube/v3/search?order=date&part=snippet&type=video&maxResults=2&channelId=UC1voaUJaImOZD51PF0yl6VA&key=AIzaSyAOBmFN9xrChpjW8yNkTPOGOYHJpTKhO04",
+        dataType:'json'
+
+    })
+        .done(function(data, status){
+
+            $.each(data.items, function(index, value) {
+
+                $html = '<div class="video">';
+                $html += "<iframe src='https://www.youtube.com/embed/" + value.id.videoId + "' frameborder=0 allowfullscreen></iframe>";
+                $html += '</div>';
+
+                $('.videos').append($html);
+            } );
+
+        });
 
     //FORM
 

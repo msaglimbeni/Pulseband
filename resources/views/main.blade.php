@@ -105,10 +105,9 @@
         <div class="container">
             <div class="col-lg-12">
                 <div class="social-container">
-                    <h2 class="sub-heading">Social Media</h2>
 
                     <div class="col-lg-6 widget facebook">
-                        <h3>Facebook</h3>
+                        <h2 class="sub-heading">We're On <a href="https://www.facebook.com/Pulse-1433601266925408/timeline/?ref=br_tf" class="big-link" target="_blank">Facebook</a> </h2>
                         <div class="facebook-posts">
                         <?php
                             $page_id = '1433601266925408';
@@ -139,7 +138,14 @@
                     </div>
 
                     <div class="col-lg-6">
-                        <h3>YouTube Widget</h3>
+
+                        <div class="widget youtube">
+                            <h2 class="sub-heading">.. And <a href="https://www.youtube.com/channel/UC1voaUJaImOZD51PF0yl6VA/feed" class=" big-link" target="_blank">YouTube</a></h2>
+
+                            <div class="videos">
+
+                            </div>
+                        </div>
                     </div>
 
                     <div class="col-lg-12">
@@ -165,8 +171,8 @@
                                 <div class="bio">
                                     <div class="left">
                                         <div class="content">
-                                            <h2>Patrick Shea</h2>
-                                            <h3>Vocals/Guitar</h3>
+                                            <h2 class="sub-heading">Patrick Shea</h2>
+                                            <div class="instrument">Vocals/Guitar</div>
 
                                             <p>
                                                 Pat started playing on a beat-up old classical guitar with steel strings just before he started high school and it wasn't long before he discovered he had an inherent love for playing instruments. He has played guitar and bass in both cover bands and originals but he always found himself singing for the projects he was in.
@@ -191,8 +197,8 @@
                                 <div class="bio">
                                     <div class="left">
                                         <div class="content">
-                                            <h2>Marcus Gazzellone</h2>
-                                            <h3>Drums</h3>
+                                            <h2 class="sub-heading">Marcus Gazzellone</h2>
+                                            <div class="instrument">Drums</div>
 
                                             <p>
                                                 Marcus started playing the drums at a young age but it really began during high school that he was very serious about music and drums.He also has a passion with recording and mixing songs in his own studio. He was always practising after school and than realize he should join bands.He and max played in a couple of bands and realizing they had a good chemistry together.
@@ -217,8 +223,8 @@
                                 <div class="bio">
                                     <div class="left">
                                         <div class="content">
-                                            <h2>Max Saglimbeni</h2>
-                                            <h3>Bass/Back-up Vocals</h3>
+                                            <h2 class="sub-heading">Max Saglimbeni</h2>
+                                            <div class="instrument">Bass/Back-up Vocals</div>
 
                                             <p>
                                                 Max was introduced to the bass guitar from his father, who had played bass throughout most of his life. Max began to play when he was old enough to grasp the instrument, and has been playing ever since. Max grew up playing a lot of progressive music. He was introduced to bands like Pink Floyd and Rush at a very young age and found the songs challenging, which allowed him to spend a lot of time on the instrument learning how to play.
@@ -245,8 +251,8 @@
                                 <div class="bio">
                                     <div class="left">
                                         <div class="content">
-                                            <h2>Trevor Hebert</h2>
-                                            <h3>Guitar</h3>
+                                            <h2 class="sub-heading">Trevor Hebert</h2>
+                                            <div class="instrument">Guitar</div>
 
                                             <p>
                                                 Trevor began to play Guitar when he was 14. Listening to popular rock groups like Blink 182 and Sum 41, Trevor's interest in guitar rapidly grew and has stuck with him ever since. Over time his interests shifted to Progressive and Classic Rock.
