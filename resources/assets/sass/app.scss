@@ -1,4 +1,53 @@
 //@import "node_modules/bootstrap-sass/assets/stylesheets/bootstrap";
+//SCREEN SIZE DEFINITIONS
+
+$portraitMobile: "(max-width: 479px)";
+$phone: $portraitMobile;
+
+$gtPhone: "(min-width: 480px)";
+$notPhone: $gtPhone;
+
+$landscapeMobile: "(min-width: 480px) and (max-width: 767px)";
+$portraitTablet: $landscapeMobile;
+$phoneWide: $landscapeMobile;
+
+$mobile: "(max-width: 767px)";
+$gtMobile: "(min-width: 768px)";
+
+$landscapeTablet: "(min-width: 768px) and (max-width: 979px)";
+$tabletWide: $landscapeTablet;
+
+$ltDesktop: "(max-width: 979px)";
+$gtTablet: "(min-width: 980px)";
+
+$desktop: "(min-width: 980px) and (max-width: 1199px)";
+
+$gtDesktop: "(min-width: 1200px)";
+$ltLarge: "(max-width: 1199px)";
+
+$wide: "(min-width: 1200px) and (max-width: 1499px)";
+
+$ltSuper: "(max-width: 1499px)";
+$gtWide: "(min-width: 1500px)";
+
+$super: "(min-width: 1500px) and (max-width: 1899px)";
+
+$ltUltra: "(max-width: 1899px)";
+$gtSuper: "(min-width: 1900px)";
+
+$ultra: "(min-width: 1900px) and (max-width: 2499px)";
+
+$ltLarger: "(max-width: 2499px)";
+$gtUltra: "(min-width: 2500px)";
+
+$retina: "only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (-o-min-device-pixel-ratio: 3/2), only screen and (min--moz-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5)";
+
+$small: $tabletWide;
+$medium: $desktop;
+$normal: $desktop;
+$large: $gtDesktop;
+$larger: $gtUltra;
+
 
 html, body {
   height: 100%;
@@ -10,6 +59,11 @@ body {
   width: 100%;
   font-weight: 100;
   font-family: 'Lato';
+  min-width:360px;
+
+  @media #{$mobile}{
+    text-align:center;
+  }
 
 
   //HEADER
@@ -29,6 +83,14 @@ body {
       a:hover{
         text-decoration: none;
       }
+
+      .navbar-toggle{
+        background-color: #22bbff;
+        padding:9px 35px;
+        @media #{$mobile}{
+          margin-top:18px;
+        }
+      }
     }
 
     #navbar{
@@ -39,6 +101,10 @@ body {
             padding:25px 25px 27px;
             font-weight:bold;
             font-size:20px;
+
+            @media #{$small}{
+              padding:25px 18px 27px;
+            }
           }
           a:hover{
             cursor:pointer;
@@ -57,9 +123,17 @@ body {
     .email{
       float:right;
       color:#22bbff;
-      font-size:20px;
-      padding:20px 0;
+      font-size:16px;
+      padding:25px 0;
       font-weight: bold;
+
+      @media #{$gtDesktop}{
+        padding:20px 0;
+        font-size:20px;
+      }
+      @media #{$mobile}{
+        display:none;
+      }
     }
   }
 
@@ -81,6 +155,10 @@ body {
     margin-bottom:30px;
     text-transform: uppercase;
     font-size:34px;
+
+    @media #{$mobile}{
+      line-height:normal;
+    }
   }
 
   //ANCHORS
@@ -107,6 +185,16 @@ body {
     text-shadow:0 4px 3px rgba(0,0,0,0.4),
     0 8px 13px rgba(0,0,0,0.1),
     0 18px 23px rgba(0,0,0,0.1);
+    cursor:default;
+
+    @media #{$small}{
+      margin-top:130px;
+    }
+
+    @media #{$mobile}{
+      font-size:50px;
+      margin-top:115px;
+    }
   }
 
   .big-image{
@@ -115,6 +203,14 @@ body {
     background-position:0 60%;
     height:960px;
     position: relative;
+
+    @media #{$small}{
+      height:840px;
+    }
+
+    @media #{$mobile}{
+      height:500px;
+    }
   }
 
 
@@ -131,6 +227,11 @@ body {
       color:#33ccff;
       position:absolute;
       padding-left:15px;
+
+      @media #{$mobile}{
+        position:static;
+        padding-left:0;
+      }
     }
 
     a.big-link:hover{
@@ -180,29 +281,232 @@ body {
 
     .gallery{
 
-      .image{
-        width:350px;
+      .image-container{
+        width:25%;
         height:250px;
         float:left;
+      }
+
+      .image{
         margin:0 60px;
         border:3px solid white;
         background-size:cover;
+        height: 100%;
       }
 
-      .image1{
+      .image1.image{
         background-image: url('../images/gal-1.jpg');
       }
 
-      .image2{
+      .image2.image{
         background-image: url('../images/gal-2.jpg');
       }
 
-      .image3{
+      .image3.image{
         background-image: url('../images/gal-3.jpg');
       }
 
-      .image4{
+      .image4.image{
         background-image: url('../images/gal-4.jpg');
+      }
+
+      @media #{$ltSuper}{
+
+        .image-container.image4{
+          display:none;
+        }
+
+        .image.image4{
+          display:none;
+        }
+
+        .image-container{
+          width:33.3%;
+        }
+      }
+
+      @media #{$ltDesktop}{
+        .image-container.image3{
+          display:none;
+        }
+
+        .image-container{
+          width:50%;
+        }
+      }
+
+      @media #{$mobile}{
+        .image-container.image2{
+          display: none;
+        }
+
+        .image-container{
+          width:100%;
+        }
+      }
+    }
+  }
+
+  .bios-wrapper{
+    min-height:300px;
+    background-color:#355069;
+    color:white;
+
+    .bios-gallery{
+      position: relative;
+      margin-bottom:20px;
+
+      .flex-control-nav{
+        a.flex-active{
+          background-color:#55aadd;
+        }
+      }
+
+      .flex-direction-nav{
+        li{
+          display: none;
+        }
+      }
+    }
+
+    .bio{
+      margin-bottom:35px;
+
+      @media #{$mobile}{
+        margin-bottom:15px;
+      }
+
+      .left, .right{
+        float:left;
+      }
+
+      .left{
+        width:70%;
+        padding-right:30px;
+
+        .content{
+          .instrument{
+            font-size: 30px;
+            margin-bottom:5px;
+          }
+        }
+        
+        p{
+          line-height:24px;
+          font-size:16px;
+          text-align:justify;
+
+          @media #{$mobile}{
+            text-align:center;
+          }
+        }
+      }
+
+      .right{
+        width:30%;
+        padding-left:30px;
+
+        .photo-container{
+
+          .photo{
+            border:3px solid white;
+          }
+
+          .photo{
+            height:380px;
+            background-size:cover;
+            background-repeat: no-repeat;
+          }
+
+          .photo.pat{
+            background-image:url('../images/bios/pat.jpg');
+          }
+
+          .photo.marc{
+            background-image:url('../images/bios/marc.jpg');
+          }
+
+          .photo.max{
+            background-image:url('../images/bios/max.jpg');
+          }
+
+          .photo.trev{
+            background-image:url('../images/bios/trev.jpg');
+          }
+        }
+      }
+
+      @media #{$gtDesktop}{
+        .right{
+          .photo-container{
+            .photo{
+              //height:380px;
+            }
+          }
+        }
+      }
+
+      @media #{$ltDesktop}{
+
+        .left{
+          width:60%;
+        }
+
+        .right{
+          width:40%;
+          padding-left:0;
+
+          .photo-container{
+            .photo{
+              height:500px;
+            }
+          }
+        }
+      }
+
+      @media #{$mobile}{
+        .left, .right{
+          width:100%;
+        }
+
+        .left{
+          padding-right:0;
+          .content{
+            text-align:center;
+          }
+        }
+
+        .right{
+          .photo-container{
+            .photo{
+              height:380px;
+              margin-top:15px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .song-player{
+    margin-top:20px;
+
+    .center-box{
+      margin:auto;
+      width:50%;
+
+      @media #{$mobile}{
+        width:100%;
+      }
+    }
+
+    .song{
+      width:100%;
+      height:140px;
+      margin-bottom:10px;
+
+      iframe{
+        height:100%;
       }
     }
   }
@@ -227,11 +531,15 @@ body {
       font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
       margin-bottom:15px;
     }
-    
+
     .contact-form{
       width:40%;
       margin:auto;
       text-align: center;
+
+      @media #{$ltDesktop}{
+        width:90%;
+      }
 
       .form-control, label{
         font-size:16px;
@@ -243,102 +551,6 @@ body {
         color:white;
         font-size:16px;
         font-weight:bold;
-      }
-    }
-  }
-
-  .bios-wrapper{
-    min-height:300px;
-    background-color:#355069;
-    color:white;
-
-    .bios-gallery{
-      position: relative;
-      margin-bottom:20px;
-
-      .flex-control-nav{
-        a.flex-active{
-          background-color:#55aadd;
-        }
-      }
-    }
-
-    .bio{
-      margin-bottom:35px;
-
-      .left, .right{
-        float:left;
-      }
-
-      .left{
-        width:70%;
-        padding-right:30px;
-
-        .content{
-          .instrument{
-            font-size: 30px;
-            margin-bottom:5px;
-          }
-        }
-        
-        p{
-          line-height:24px;
-          font-size:16px;
-          text-align:justify;
-        }
-      }
-
-      .right{
-        width:30%;
-        padding-left:30px;
-
-        .photo-container{
-
-          .photo{
-            border:3px solid white;
-          }
-
-          .photo{
-            height:300px;
-            background-size:cover;
-            background-repeat: no-repeat;
-          }
-
-          .photo.pat{
-            background-image:url('../images/bios/pat.jpg');
-          }
-
-          .photo.marc{
-            background-image:url('../images/bios/marc.jpg');
-          }
-
-          .photo.max{
-            background-image:url('../images/bios/max.jpg');
-          }
-
-          .photo.trev{
-            background-image:url('../images/bios/trev.jpg');
-          }
-        }
-      }
-    }
-  }
-
-  .song-player{
-    margin-top:20px;
-
-    .center-box{
-      margin:auto;
-      width:50%;
-    }
-
-    .song{
-      width:100%;
-      height:140px;
-      margin-bottom:10px;
-
-      iframe{
-        height:100%;
       }
     }
   }

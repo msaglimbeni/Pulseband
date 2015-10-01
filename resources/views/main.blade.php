@@ -40,8 +40,8 @@
                     <ul class="nav navbar-nav">
                         <li class="active"><a data-id="#home" class="nav-anchor">Home</a></li>
                         <li><a data-id="#media" class="nav-anchor">Media</a></li>
-                        <li><a data-id="#bios" class="nav-anchor">Bios</a></li>
-                        <li><a data-id="#contact" class="nav-anchor">Contact</a></li>
+                        <li><a data-id="#bios" class="nav-anchor">The Band</a></li>
+                        <li><a data-id="#contact" class="nav-anchor">Contact Us</a></li>
                     </ul>
 
                     <div class="email">contact@pulseband.ca</div>
@@ -288,17 +288,25 @@
     <section class="gallery-wrapper">
         <div id="contact" class="anchor"></div>
         <div class="gallery">
-            <div class="image1 image">
+            <div class="image-container image1">
+                <div class="image1 image">
 
+                </div>
             </div>
-            <div class="image2 image">
+            <div class="image-container image2">
+                <div class="image2 image">
 
+                </div>
             </div>
-            <div class="image3 image">
+            <div class="image-container image3">
+                <div class="image3 image">
 
+                </div>
             </div>
-            <div class="image4 image">
+            <div class="image-container image4">
+                <div class="image4 image">
 
+                </div>
             </div>
 
             <div class="clear"></div>

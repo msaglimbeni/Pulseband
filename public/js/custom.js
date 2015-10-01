@@ -1,6 +1,6 @@
 $(document).ready(function() {
 
-
+    //GALLERY
 
     $('.bios-gallery').flexslider({
         directionNav:true,
@@ -90,7 +90,7 @@ $(document).ready(function() {
     $('.nav-anchor').each(function(index, div){
        $(div).click(function() {
 
-           $('html, body').animate({
+           $('body').animate({
                scrollTop: $($(div).data('id')).offset().top,
                easing: "swing"
            }, 1000) ;

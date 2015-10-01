@@ -6,7 +6,11 @@ body {
   padding: 0;
   width: 100%;
   font-weight: 100;
-  font-family: 'Lato'; }
+  font-family: 'Lato';
+  min-width: 360px; }
+  @media (max-width: 767px) {
+    body {
+      text-align: center; } }
   body .navbar .navbar-header {
     margin-right: 35px; }
     body .navbar .navbar-header a.brand {
@@ -19,11 +23,20 @@ body {
       background-position: 100% 46%; }
     body .navbar .navbar-header a:hover {
       text-decoration: none; }
+    body .navbar .navbar-header .navbar-toggle {
+      background-color: #22bbff;
+      padding: 9px 35px; }
+      @media (max-width: 767px) {
+        body .navbar .navbar-header .navbar-toggle {
+          margin-top: 18px; } }
   body .navbar #navbar ul.nav li a {
     color: white;
     padding: 25px 25px 27px;
     font-weight: bold;
     font-size: 20px; }
+    @media (min-width: 768px) and (max-width: 979px) {
+      body .navbar #navbar ul.nav li a {
+        padding: 25px 18px 27px; } }
   body .navbar #navbar ul.nav li a:hover {
     cursor: pointer;
     color: #22bbff; }
@@ -32,9 +45,16 @@ body {
   body .navbar .email {
     float: right;
     color: #22bbff;
-    font-size: 20px;
-    padding: 20px 0;
+    font-size: 16px;
+    padding: 25px 0;
     font-weight: bold; }
+    @media (min-width: 1200px) {
+      body .navbar .email {
+        padding: 20px 0;
+        font-size: 20px; } }
+    @media (max-width: 767px) {
+      body .navbar .email {
+        display: none; } }
   body h1, body h2, body h3, body h4, body h5 {
     font-weight: bold; }
   body a:focus {
@@ -45,6 +65,9 @@ body {
     margin-bottom: 30px;
     text-transform: uppercase;
     font-size: 34px; }
+    @media (max-width: 767px) {
+      body .sub-heading {
+        line-height: normal; } }
   body .anchor {
     position: relative;
     bottom: 80px; }
@@ -60,13 +83,27 @@ body {
     font-family: 'Special Elite', cursive;
     letter-spacing: 38px;
     text-transform: uppercase;
-    text-shadow: 0 4px 3px rgba(0, 0, 0, 0.4), 0 8px 13px rgba(0, 0, 0, 0.1), 0 18px 23px rgba(0, 0, 0, 0.1); }
+    text-shadow: 0 4px 3px rgba(0, 0, 0, 0.4), 0 8px 13px rgba(0, 0, 0, 0.1), 0 18px 23px rgba(0, 0, 0, 0.1);
+    cursor: default; }
+    @media (min-width: 768px) and (max-width: 979px) {
+      body h1.band-name {
+        margin-top: 130px; } }
+    @media (max-width: 767px) {
+      body h1.band-name {
+        font-size: 50px;
+        margin-top: 115px; } }
   body .big-image {
     background-image: url("../images/cover.jpg");
     background-size: cover;
     background-position: 0 60%;
     height: 960px;
     position: relative; }
+    @media (min-width: 768px) and (max-width: 979px) {
+      body .big-image {
+        height: 840px; } }
+    @media (max-width: 767px) {
+      body .big-image {
+        height: 500px; } }
   body .social-wrapper, body .gallery-wrapper, body .contact-wrapper, body .bios-wrapper {
     padding: 50px 0; }
   body .social-wrapper {
@@ -77,6 +114,10 @@ body {
       color: #33ccff;
       position: absolute;
       padding-left: 15px; }
+      @media (max-width: 767px) {
+        body .social-wrapper a.big-link {
+          position: static;
+          padding-left: 0; } }
     body .social-wrapper a.big-link:hover {
       text-decoration: none;
       font-size: 36px; }
@@ -100,21 +141,120 @@ body {
   body .gallery-wrapper {
     background-image: url("../images/black_bg.png");
     min-height: 300px; }
-    body .gallery-wrapper .gallery .image {
-      width: 350px;
+    body .gallery-wrapper .gallery .image-container {
+      width: 25%;
       height: 250px;
-      float: left;
+      float: left; }
+    body .gallery-wrapper .gallery .image {
       margin: 0 60px;
       border: 3px solid white;
-      background-size: cover; }
-    body .gallery-wrapper .gallery .image1 {
+      background-size: cover;
+      height: 100%; }
+    body .gallery-wrapper .gallery .image1.image {
       background-image: url("../images/gal-1.jpg"); }
-    body .gallery-wrapper .gallery .image2 {
+    body .gallery-wrapper .gallery .image2.image {
       background-image: url("../images/gal-2.jpg"); }
-    body .gallery-wrapper .gallery .image3 {
+    body .gallery-wrapper .gallery .image3.image {
       background-image: url("../images/gal-3.jpg"); }
-    body .gallery-wrapper .gallery .image4 {
+    body .gallery-wrapper .gallery .image4.image {
       background-image: url("../images/gal-4.jpg"); }
+    @media (max-width: 1499px) {
+      body .gallery-wrapper .gallery .image-container.image4 {
+        display: none; }
+      body .gallery-wrapper .gallery .image.image4 {
+        display: none; }
+      body .gallery-wrapper .gallery .image-container {
+        width: 33.3%; } }
+    @media (max-width: 979px) {
+      body .gallery-wrapper .gallery .image-container.image3 {
+        display: none; }
+      body .gallery-wrapper .gallery .image-container {
+        width: 50%; } }
+    @media (max-width: 767px) {
+      body .gallery-wrapper .gallery .image-container.image2 {
+        display: none; }
+      body .gallery-wrapper .gallery .image-container {
+        width: 100%; } }
+  body .bios-wrapper {
+    min-height: 300px;
+    background-color: #355069;
+    color: white; }
+    body .bios-wrapper .bios-gallery {
+      position: relative;
+      margin-bottom: 20px; }
+      body .bios-wrapper .bios-gallery .flex-control-nav a.flex-active {
+        background-color: #55aadd; }
+      body .bios-wrapper .bios-gallery .flex-direction-nav li {
+        display: none; }
+    body .bios-wrapper .bio {
+      margin-bottom: 35px; }
+      @media (max-width: 767px) {
+        body .bios-wrapper .bio {
+          margin-bottom: 15px; } }
+      body .bios-wrapper .bio .left, body .bios-wrapper .bio .right {
+        float: left; }
+      body .bios-wrapper .bio .left {
+        width: 70%;
+        padding-right: 30px; }
+        body .bios-wrapper .bio .left .content .instrument {
+          font-size: 30px;
+          margin-bottom: 5px; }
+        body .bios-wrapper .bio .left p {
+          line-height: 24px;
+          font-size: 16px;
+          text-align: justify; }
+          @media (max-width: 767px) {
+            body .bios-wrapper .bio .left p {
+              text-align: center; } }
+      body .bios-wrapper .bio .right {
+        width: 30%;
+        padding-left: 30px; }
+        body .bios-wrapper .bio .right .photo-container .photo {
+          border: 3px solid white; }
+        body .bios-wrapper .bio .right .photo-container .photo {
+          height: 380px;
+          background-size: cover;
+          background-repeat: no-repeat; }
+        body .bios-wrapper .bio .right .photo-container .photo.pat {
+          background-image: url("../images/bios/pat.jpg"); }
+        body .bios-wrapper .bio .right .photo-container .photo.marc {
+          background-image: url("../images/bios/marc.jpg"); }
+        body .bios-wrapper .bio .right .photo-container .photo.max {
+          background-image: url("../images/bios/max.jpg"); }
+        body .bios-wrapper .bio .right .photo-container .photo.trev {
+          background-image: url("../images/bios/trev.jpg"); }
+      @media (max-width: 979px) {
+        body .bios-wrapper .bio .left {
+          width: 60%; }
+        body .bios-wrapper .bio .right {
+          width: 40%;
+          padding-left: 0; }
+          body .bios-wrapper .bio .right .photo-container .photo {
+            height: 500px; } }
+      @media (max-width: 767px) {
+        body .bios-wrapper .bio .left, body .bios-wrapper .bio .right {
+          width: 100%; }
+        body .bios-wrapper .bio .left {
+          padding-right: 0; }
+          body .bios-wrapper .bio .left .content {
+            text-align: center; }
+        body .bios-wrapper .bio .right .photo-container .photo {
+          height: 380px;
+          margin-top: 15px; } }
+  body .song-player {
+    margin-top: 20px; }
+    body .song-player .center-box {
+      margin: auto;
+      width: 50%; }
+      @media (max-width: 767px) {
+        body .song-player .center-box {
+          width: 100%; } }
+    body .song-player .song {
+      width: 100%;
+      height: 140px;
+      margin-bottom: 10px; }
+      body .song-player .song iframe {
+        height: 100%; }
   body .contact-wrapper {
     color: #000;
     min-height: 300px;
@@ -134,6 +274,9 @@ body {
       width: 40%;
       margin: auto;
       text-align: center; }
+      @media (max-width: 979px) {
+        body .contact-wrapper .contact-form {
+          width: 90%; } }
       body .contact-wrapper .contact-form .form-control, body .contact-wrapper .contact-form label {
         font-size: 16px;
         font-weight: bold; }
@@ -142,57 +285,6 @@ body {
         color: white;
         font-size: 16px;
         font-weight: bold; }
-  body .bios-wrapper {
-    min-height: 300px;
-    background-color: #355069;
-    color: white; }
-    body .bios-wrapper .bios-gallery {
-      position: relative;
-      margin-bottom: 20px; }
-      body .bios-wrapper .bios-gallery .flex-control-nav a.flex-active {
-        background-color: #55aadd; }
-    body .bios-wrapper .bio {
-      margin-bottom: 35px; }
-      body .bios-wrapper .bio .left, body .bios-wrapper .bio .right {
-        float: left; }
-      body .bios-wrapper .bio .left {
-        width: 70%;
-        padding-right: 30px; }
-        body .bios-wrapper .bio .left .content .instrument {
-          font-size: 30px;
-          margin-bottom: 5px; }
-        body .bios-wrapper .bio .left p {
-          line-height: 24px;
-          font-size: 16px;
-          text-align: justify; }
-      body .bios-wrapper .bio .right {
-        width: 30%;
-        padding-left: 30px; }
-        body .bios-wrapper .bio .right .photo-container .photo {
-          border: 3px solid white; }
-        body .bios-wrapper .bio .right .photo-container .photo {
-          height: 300px;
-          background-size: cover;
-          background-repeat: no-repeat; }
-        body .bios-wrapper .bio .right .photo-container .photo.pat {
-          background-image: url("../images/bios/pat.jpg"); }
-        body .bios-wrapper .bio .right .photo-container .photo.marc {
-          background-image: url("../images/bios/marc.jpg"); }
-        body .bios-wrapper .bio .right .photo-container .photo.max {
-          background-image: url("../images/bios/max.jpg"); }
-        body .bios-wrapper .bio .right .photo-container .photo.trev {
-          background-image: url("../images/bios/trev.jpg"); }
-  body .song-player {
-    margin-top: 20px; }
-    body .song-player .center-box {
-      margin: auto;
-      width: 50%; }
-    body .song-player .song {
-      width: 100%;
-      height: 140px;
-      margin-bottom: 10px; }
-      body .song-player .song iframe {
-        height: 100%; }
   body .shows-wrapper {
     position: relative; }
   body .widget.upcoming {
