@@ -73,19 +73,19 @@
                         </div>
 
                         <div class="show">
-                            <div class="date">Friday, October 2nd</div>
-                            <div class="time">7pm - 11pm</div>
-                            <div class="location">Air Canada Centre - Toronto</div>
+                            <div class="date">Friday, August 21st</div>
+                            <div class="time">9pm - 1am</div>
+                            <div class="location">Monty's Gastropub - St. Catharines</div>
                         </div>
 
                         <div class="show">
-                            <div class="date">Saturday, January 15th</div>
-                            <div class="time">7pm - 11pm</div>
+                            <div class="date">Saturday, August 15th</div>
+                            <div class="time">10pm - 2am</div>
                             <div class="location">Cats Caboose - St. Catharines</div>
                         </div>
                     </div>
 
-                    <h2 class="upcoming-heading">Upcoming Shows</h2>
+                    <h2 class="upcoming-heading">Past Shows</h2>
                 </div>
 
                 <div class="right-contain">
