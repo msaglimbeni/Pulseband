@@ -524,6 +524,8 @@ body {
       iframe{
         height:100%;
       }
+
+
     }
   }
 
@@ -593,7 +595,7 @@ body {
     }
 
     .left-contain, .right-contain{
-      width:8%;
+      width:3%;
 
       .left-arrow, .right-arrow{
         font-size:48px;
@@ -605,7 +607,7 @@ body {
     }
 
     .center-contain{
-      width:84%;
+      width:94%;
 
       .upcoming-heading{
         text-align: center;
@@ -616,6 +618,7 @@ body {
       overflow: hidden;
       height:120px;
       position:relative;
+      width:1080px;
 
       .shows-strip{
         width:2000px;
@@ -624,10 +627,10 @@ body {
       }
 
       .show{
-        width:315px;
+        width:360px;
         padding:20px 5px;
         float:left;
-        margin-right:0px;
+        margin-right:0;
         font-family: 'Special Elite', cursive;
 
         .date, .time, .location{

@@ -35,14 +35,13 @@ $(document).ready(function() {
         });
 
         totalWidth -= parseInt($('.shows').css('width'));
-
         totalWidth = '-' + totalWidth;
-        console.log(totalWidth);
 
+        //console.log(totalWidth);
+        //console.log('current left: ' + showStrip.css('left'));
 
         if(parseInt(showStrip.css('left')) + parseInt(increment) < totalWidth){
             showStrip.css('left', totalWidth+'px');
-            console.log('first');
         }else{
             showStrip.css('left', increment);
         }

@@ -311,7 +311,7 @@ body {
     body .show-hanger .left-contain, body .show-hanger .right-contain, body .show-hanger .center-contain {
       float: left; }
     body .show-hanger .left-contain, body .show-hanger .right-contain {
-      width: 8%; }
+      width: 3%; }
       body .show-hanger .left-contain .left-arrow, body .show-hanger .left-contain .right-arrow, body .show-hanger .right-contain .left-arrow, body .show-hanger .right-contain .right-arrow {
         font-size: 48px;
         font-weight: bold;
@@ -319,22 +319,23 @@ body {
         padding: 25px 0;
         display: block; }
     body .show-hanger .center-contain {
-      width: 84%; }
+      width: 94%; }
       body .show-hanger .center-contain .upcoming-heading {
         text-align: center; }
     body .show-hanger .shows {
       overflow: hidden;
       height: 120px;
-      position: relative; }
+      position: relative;
+      width: 1080px; }
       body .show-hanger .shows .shows-strip {
         width: 2000px;
         position: absolute;
         left: 0; }
       body .show-hanger .shows .show {
-        width: 315px;
+        width: 360px;
         padding: 20px 5px;
         float: left;
-        margin-right: 0px;
+        margin-right: 0;
         font-family: 'Special Elite', cursive; }
         body .show-hanger .shows .show .date, body .show-hanger .shows .show .time, body .show-hanger .shows .show .location {
           font-size: 18px;
