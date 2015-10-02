@@ -70,7 +70,15 @@ body {
 
   .navbar{
     .navbar-header{
-      margin-right:35px;
+      margin-right:15px;
+
+      @media #{$gtDesktop}{
+        margin-right:35px;
+      }
+
+      @media #{$small}{
+        margin-right:15px;
+      }
       a.brand{
         padding:16px 5px 8px;
         display: block;
@@ -98,12 +106,16 @@ body {
         li{
           a{
             color:white;
-            padding:25px 25px 27px;
+            padding:25px 16px 27px;
             font-weight:bold;
             font-size:20px;
 
+            @media #{$gtDesktop}{
+              padding:25px 24px 27px;
+            }
+
             @media #{$small}{
-              padding:25px 18px 27px;
+              padding:25px 16px 27px;
             }
           }
           a:hover{
@@ -494,6 +506,10 @@ body {
     .center-box{
       margin:auto;
       width:50%;
+
+      @media #{$small}{
+        width:80%;
+      }
 
       @media #{$mobile}{
         width:100%;

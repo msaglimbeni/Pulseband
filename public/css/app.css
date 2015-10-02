@@ -12,7 +12,13 @@ body {
     body {
       text-align: center; } }
   body .navbar .navbar-header {
-    margin-right: 35px; }
+    margin-right: 15px; }
+    @media (min-width: 1200px) {
+      body .navbar .navbar-header {
+        margin-right: 35px; } }
+    @media (min-width: 768px) and (max-width: 979px) {
+      body .navbar .navbar-header {
+        margin-right: 15px; } }
     body .navbar .navbar-header a.brand {
       padding: 16px 5px 8px;
       display: block;
@@ -31,12 +37,15 @@ body {
           margin-top: 18px; } }
   body .navbar #navbar ul.nav li a {
     color: white;
-    padding: 25px 25px 27px;
+    padding: 25px 16px 27px;
     font-weight: bold;
     font-size: 20px; }
+    @media (min-width: 1200px) {
+      body .navbar #navbar ul.nav li a {
+        padding: 25px 24px 27px; } }
     @media (min-width: 768px) and (max-width: 979px) {
       body .navbar #navbar ul.nav li a {
-        padding: 25px 18px 27px; } }
+        padding: 25px 16px 27px; } }
   body .navbar #navbar ul.nav li a:hover {
     cursor: pointer;
     color: #22bbff; }
@@ -246,6 +255,9 @@ body {
     body .song-player .center-box {
       margin: auto;
       width: 50%; }
+      @media (min-width: 768px) and (max-width: 979px) {
+        body .song-player .center-box {
+          width: 80%; } }
       @media (max-width: 767px) {
         body .song-player .center-box {
           width: 100%; } }
