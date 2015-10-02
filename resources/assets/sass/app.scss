@@ -507,6 +507,10 @@ body {
       margin:auto;
       width:50%;
 
+      @media #{$small}{
+        width:80%;
+      }
+
       @media #{$mobile}{
         width:100%;
       }
