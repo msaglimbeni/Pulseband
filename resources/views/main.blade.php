@@ -189,7 +189,7 @@
                         </div>
                     </div>
 
-                    <div class="col-lg-12">
+                    <div class="col-md-12">
                         <div class="song-player">
                             <div class="center-box">
                                 <h2 class="sub-heading">We're also on <a href="https://soundcloud.com/pulseband-2" class="big-link" target="_blank">SoundCloud</a></h2>
