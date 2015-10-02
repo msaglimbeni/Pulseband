@@ -37,7 +37,7 @@ body {
           margin-top: 18px; } }
   body .navbar #navbar ul.nav li a {
     color: white;
-    padding: 25px 18px 27px;
+    padding: 25px 16px 27px;
     font-weight: bold;
     font-size: 20px; }
     @media (min-width: 1200px) {
@@ -45,7 +45,7 @@ body {
         padding: 25px 24px 27px; } }
     @media (min-width: 768px) and (max-width: 979px) {
       body .navbar #navbar ul.nav li a {
-        padding: 25px 18px 27px; } }
+        padding: 25px 16px 27px; } }
   body .navbar #navbar ul.nav li a:hover {
     cursor: pointer;
     color: #22bbff; }
