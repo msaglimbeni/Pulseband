@@ -122,31 +122,7 @@
                     <div class="col-lg-6 widget facebook">
                         <h2 class="sub-heading">We're On <a href="https://www.facebook.com/Pulse-1433601266925408/timeline/?ref=br_tf" class="big-link" target="_blank">Facebook</a> </h2>
                         <div class="facebook-posts">
-                        <?php
-                            $page_id = '1433601266925408';
-                            $access_token = '1599822940260368|L6prZhxUoUQR4ldALq5HoLCoKbU';
-                            $posts = '';
-
-                            $json_object = file_get_contents('https://graph.facebook.com/'.$page_id.'/posts?access_token='.$access_token);
-
-                            $fb_data = json_decode($json_object);
-
-                            for($i = 0; $i < 3; $i++){
-                                $dateCreated = new DateTime($fb_data->data[$i]->created_time);
-                                $date = date_format($dateCreated, 'F d, Y');
-
-                                $likes = count($fb_data->data[$i]->likes->data);
-
-
-                                $posts .= '<div class="feed-content fb">';
-                                $posts .= '<div class="date">'.$date.'</div>';
-                                $posts .= '<div class="fb-msg">'.$fb_data->data[$i]->message.'</div>';
-                                $posts .= '<div class="fb-likes"><span>Likes: </span>'.$likes.'</div>';
-                                $posts .= "</div><br><br>";
-                            }
-
-                            echo $posts;
-                        ?>
+                            <?php include('widgets/facebook/_page_facebook.php'); ?>
                         </div>
                     </div>
 
@@ -161,7 +137,7 @@
                         </div>
                     </div>
 
-                    <div class="col-lg-12">
+                    <div class="col-md-12">
                         <div class="song-player">
                             <div class="center-box">
                                 <h2 class="sub-heading">We're also on <a href="https://soundcloud.com/pulseband-2" class="big-link" target="_blank">SoundCloud</a></h2>

@@ -88,10 +88,10 @@ $(document).ready(function() {
         client_id: "45d3103837ca07bf2c216ad5eaab651c"
     });
 
-    SC.get('/users/pulseband-2/tracks?limit=4', function(response, error) {
+    SC.get('/users/pulseband-2/tracks?limit=8', function(response, error) {
         $.each(response, function(index, soundcloud){
             SC.oEmbed(soundcloud.uri, function(response) {
-                $('.song-player').append('<div class="song">'+response.html+'</div>');
+                $('.song-player').append('<div class="song col-md-6">'+response.html+'</div>');
             });
         });
     });
