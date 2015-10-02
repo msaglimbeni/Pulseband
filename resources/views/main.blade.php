@@ -58,30 +58,44 @@
                     <span class="left-arrow"> < </span>
                 </div>
 
-                <div class="shows">
-                    <div class="shows-strip">
-                        <div class="show">
-                            <div class="date">Saturday, September 26th</div>
-                            <div class="time">10pm - 2am</div>
-                            <div class="location">Cats Caboose - St. Catharines</div>
-                        </div>
+                <div class="center-contain">
+                    <div class="shows">
+                        <div class="shows-strip" data-increment="315" data-position="0">
+                            <div class="show">
+                                <div class="date">1 Saturday, September 26th</div>
+                                <div class="time">10pm - 2am</div>
+                                <div class="location">Cats Caboose - St. Catharines</div>
+                            </div>
 
-                        <div class="show">
-                            <div class="date">Sunday, September 27th</div>
-                            <div class="time">2pm - 6pm</div>
-                            <div class="location">Donellys Pub - Thorold</div>
-                        </div>
+                            <div class="show">
+                                <div class="date">2 Sunday, September 27th</div>
+                                <div class="time">2pm - 6pm</div>
+                                <div class="location">Donellys Pub - Thorold</div>
+                            </div>
 
-                        <div class="show">
-                            <div class="date">Friday, August 21st</div>
-                            <div class="time">9pm - 1am</div>
-                            <div class="location">Monty's Gastropub - St. Catharines</div>
-                        </div>
+                            <div class="show">
+                                <div class="date">3 Friday, August 21st</div>
+                                <div class="time">9pm - 1am</div>
+                                <div class="location">Monty's Gastropub - St. Catharines</div>
+                            </div>
 
-                        <div class="show">
-                            <div class="date">Saturday, August 15th</div>
-                            <div class="time">10pm - 2am</div>
-                            <div class="location">Cats Caboose - St. Catharines</div>
+                            <div class="show">
+                                <div class="date">4 Saturday, August 15th</div>
+                                <div class="time">10pm - 2am</div>
+                                <div class="location">Cats Caboose - St. Catharines</div>
+                            </div>
+
+                            <div class="show">
+                                <div class="date">5 NEWWW</div>
+                                <div class="time">9pm - 1am</div>
+                                <div class="location">Monty's Gastropub - St. Catharines</div>
+                            </div>
+
+                            <div class="show">
+                                <div class="date">6 Saturday, August 15th</div>
+                                <div class="time">10pm - 2am</div>
+                                <div class="location">Cats Caboose - St. Catharines</div>
+                            </div>
                         </div>
                     </div>
 

@@ -588,7 +588,7 @@ body {
     color:white;
     font-weight: bold;
 
-    .left-contain, .right-contain, .shows{
+    .left-contain, .right-contain, .center-contain{
       float:left;
     }
 
@@ -604,19 +604,30 @@ body {
       }
     }
 
-    .shows{
+    .center-contain{
       width:84%;
+
+      .upcoming-heading{
+        text-align: center;
+      }
+    }
+
+    .shows{
       overflow: hidden;
+      height:120px;
+      position:relative;
 
       .shows-strip{
         width:2000px;
+        position:absolute;
+        left:0;
       }
 
       .show{
         width:315px;
         padding:20px 5px;
         float:left;
-        margin-right:10px;
+        margin-right:0px;
         font-family: 'Special Elite', cursive;
 
         .date, .time, .location{
@@ -626,10 +637,6 @@ body {
           border-right:1px solid white;
           padding-right:20px;
         }
-      }
-
-      .upcoming-heading{
-        text-align: center;
       }
     }
   }

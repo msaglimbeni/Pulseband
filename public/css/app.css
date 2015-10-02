@@ -309,7 +309,7 @@ body {
     width: 100%;
     color: white;
     font-weight: bold; }
-    body .show-hanger .left-contain, body .show-hanger .right-contain, body .show-hanger .shows {
+    body .show-hanger .left-contain, body .show-hanger .right-contain, body .show-hanger .center-contain {
       float: left; }
     body .show-hanger .left-contain, body .show-hanger .right-contain {
       width: 8%; }
@@ -319,16 +319,23 @@ body {
         text-align: center;
         padding: 25px 0;
         display: block; }
+    body .show-hanger .center-contain {
+      width: 84%; }
+      body .show-hanger .center-contain .upcoming-heading {
+        text-align: center; }
     body .show-hanger .shows {
-      width: 84%;
-      overflow: hidden; }
+      overflow: hidden;
+      height: 120px;
+      position: relative; }
       body .show-hanger .shows .shows-strip {
-        width: 2000px; }
+        width: 2000px;
+        position: absolute;
+        left: 0; }
       body .show-hanger .shows .show {
         width: 315px;
         padding: 20px 5px;
         float: left;
-        margin-right: 10px;
+        margin-right: 0px;
         font-family: 'Special Elite', cursive; }
         body .show-hanger .shows .show .date, body .show-hanger .shows .show .time, body .show-hanger .shows .show .location {
           font-size: 18px;
@@ -336,8 +343,6 @@ body {
           text-align: center;
           border-right: 1px solid white;
           padding-right: 20px; }
-      body .show-hanger .shows .upcoming-heading {
-        text-align: center; }
   body footer {
     background-color: black;
     color: white;
