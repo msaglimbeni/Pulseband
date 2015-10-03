@@ -618,28 +618,41 @@ body {
       overflow: hidden;
       height:120px;
       position:relative;
-      width:1080px;
+      width: 100%;
 
       .shows-strip{
-        width:2000px;
+        width: 100%;
         position:absolute;
         left:0;
       }
 
       .show{
-        width:360px;
-        padding:20px 5px;
+        width:357px;
+        padding:0px 5px;
         float:left;
-        margin-right:0;
+        margin: 20px 0px;
+        border-right:1px solid white;
         font-family: 'Special Elite', cursive;
+
+          @media #{$normal}{
+            width: 294px;
+          }
+          @media #{$small}{
+            width: 338px;
+          }
+          @media #{$mobile}{
+            width: 100%;
+          }
 
         .date, .time, .location{
           font-size:18px;
           font-weight:normal;
           text-align:center;
-          border-right:1px solid white;
-          padding-right:20px;
         }
+      }
+
+      .show.last{
+        border-right: none;
       }
     }
   }

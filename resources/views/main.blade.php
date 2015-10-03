@@ -62,29 +62,22 @@
                     <div class="shows">
                         <div class="shows-strip" data-increment="360" data-position="0">
                             <div class="show">
-                                <div class="date">1 Saturday, September 26th</div>
-                                <div class="time">10pm - 2am</div>
-                                <div class="location">Cats Caboose - St. Catharines</div>
-                            </div>
-
-                            <div class="show">
-                                <div class="date">2 Sunday, September 27th</div>
-                                <div class="time">2pm - 6pm</div>
-                                <div class="location">Donellys Pub - Thorold</div>
-                            </div>
-
-                            <div class="show">
                                 <div class="date">3 Friday, August 21st</div>
                                 <div class="time">9pm - 1am</div>
                                 <div class="location">Monty's Gastropub - St. Catharines</div>
                             </div>
 
                             <div class="show">
-                                <div class="date">4 Saturday, August 15th</div>
+                                <div class="date">1 Saturday, September 26th</div>
                                 <div class="time">10pm - 2am</div>
                                 <div class="location">Cats Caboose - St. Catharines</div>
                             </div>
 
+                            <div class="show last">
+                                <div class="date">2 Sunday, September 27th</div>
+                                <div class="time">2pm - 6pm</div>
+                                <div class="location">Donnellys Pub - Thorold</div>
+                            </div>
                         </div>
                     </div>
 
@@ -112,7 +105,7 @@
                         <h2 class="sub-heading">We're On <a href="https://www.facebook.com/Pulse-1433601266925408/timeline/?ref=br_tf" class="big-link" target="_blank">Facebook</a> </h2>
                         <div class="facebook-posts">
                             <?php include('widgets/facebook/_page_facebook.php'); ?>
-                        </div>
+                    </div>
                     </div>
 
                     <div class="col-lg-6">

@@ -326,23 +326,33 @@ body {
       overflow: hidden;
       height: 120px;
       position: relative;
-      width: 1080px; }
+      width: 100%; }
       body .show-hanger .shows .shows-strip {
-        width: 2000px;
+        width: 100%;
         position: absolute;
         left: 0; }
       body .show-hanger .shows .show {
-        width: 360px;
-        padding: 20px 5px;
+        width: 357px;
+        padding: 0px 5px;
         float: left;
-        margin-right: 0;
+        margin: 20px 0px;
+        border-right: 1px solid white;
         font-family: 'Special Elite', cursive; }
+        @media (min-width: 980px) and (max-width: 1199px) {
+          body .show-hanger .shows .show {
+            width: 294px; } }
+        @media (min-width: 768px) and (max-width: 979px) {
+          body .show-hanger .shows .show {
+            width: 338px; } }
+        @media (max-width: 767px) {
+          body .show-hanger .shows .show {
+            width: 100%; } }
         body .show-hanger .shows .show .date, body .show-hanger .shows .show .time, body .show-hanger .shows .show .location {
           font-size: 18px;
           font-weight: normal;
-          text-align: center;
-          border-right: 1px solid white;
-          padding-right: 20px; }
+          text-align: center; }
+      body .show-hanger .shows .show.last {
+        border-right: none; }
   body footer {
     background-color: black;
     color: white;
