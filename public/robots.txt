@@ -1,2 +1,2 @@
+Sitemap: http://pulseband.ca/sitemap.xml
 User-agent: *
-Disallow:
