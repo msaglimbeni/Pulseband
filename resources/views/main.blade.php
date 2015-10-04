@@ -331,7 +331,7 @@
 
         <!-- Custom JS file -->
         <script src="{{asset('js/custom.js')}}"></script>
-        <script src="{{asset('js/jquery.flexslider.js')}}"></script>
+        <script src="{{asset('js/jquery.flexslider-min.js')}}"></script>
 
         <!-- Soundcloud SDK -->
         <script src="//connect.soundcloud.com/sdk-2.0.0.js"></script>
