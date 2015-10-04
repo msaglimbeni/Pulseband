@@ -199,22 +199,30 @@ body {
     0 18px 23px rgba(0,0,0,0.1);
     cursor:default;
 
+    @media #{$large}{
+
+    }
+
     @media #{$small}{
-      margin-top:130px;
+      margin-top:530px;
     }
 
     @media #{$mobile}{
       font-size:50px;
-      margin-top:115px;
+      margin-top:255px;
     }
   }
 
   .big-image{
     background-image:url('../images/cover.jpg');
     background-size:cover;
-    background-position:0 60%;
+    background-position:45% 30%;
     height:960px;
     position: relative;
+
+    @media#{$large}{
+      background-position:45% 30%;
+    }
 
     @media #{$small}{
       height:840px;
@@ -596,6 +604,10 @@ body {
 
     .left-contain, .right-contain{
       width:3%;
+      
+      @media #{$mobile}{
+        display: none;
+      }
 
       .left-arrow, .right-arrow{
         font-size:48px;
@@ -642,6 +654,7 @@ body {
           }
           @media #{$mobile}{
             width: 100%;
+            border-right:none;
           }
 
         .date, .time, .location{

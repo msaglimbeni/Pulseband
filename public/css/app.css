@@ -96,17 +96,20 @@ body {
     cursor: default; }
     @media (min-width: 768px) and (max-width: 979px) {
       body h1.band-name {
-        margin-top: 130px; } }
+        margin-top: 530px; } }
     @media (max-width: 767px) {
       body h1.band-name {
         font-size: 50px;
-        margin-top: 115px; } }
+        margin-top: 255px; } }
   body .big-image {
     background-image: url("../images/cover.jpg");
     background-size: cover;
-    background-position: 0 60%;
+    background-position: 45% 30%;
     height: 960px;
     position: relative; }
+    @media (min-width: 1200px) {
+      body .big-image {
+        background-position: 45% 30%; } }
     @media (min-width: 768px) and (max-width: 979px) {
       body .big-image {
         height: 840px; } }
@@ -312,6 +315,9 @@ body {
       float: left; }
     body .show-hanger .left-contain, body .show-hanger .right-contain {
       width: 3%; }
+      @media (max-width: 767px) {
+        body .show-hanger .left-contain, body .show-hanger .right-contain {
+          display: none; } }
       body .show-hanger .left-contain .left-arrow, body .show-hanger .left-contain .right-arrow, body .show-hanger .right-contain .left-arrow, body .show-hanger .right-contain .right-arrow {
         font-size: 48px;
         font-weight: bold;
@@ -346,7 +352,8 @@ body {
             width: 338px; } }
         @media (max-width: 767px) {
           body .show-hanger .shows .show {
-            width: 100%; } }
+            width: 100%;
+            border-right: none; } }
         body .show-hanger .shows .show .date, body .show-hanger .shows .show .time, body .show-hanger .shows .show .location {
           font-size: 18px;
           font-weight: normal;
