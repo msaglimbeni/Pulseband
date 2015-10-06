@@ -58,8 +58,9 @@ body {
   padding: 0;
   width: 100%;
   font-weight: 100;
-  font-family: 'Lato';
+  font-family: 'Lato', sans-serif;
   min-width:360px;
+
 
   @media #{$mobile}{
     text-align:center;
@@ -107,7 +108,6 @@ body {
           a{
             color:white;
             padding:25px 16px 27px;
-            font-weight:bold;
             font-size:20px;
 
             @media #{$gtDesktop}{
@@ -137,7 +137,6 @@ body {
       color:#22bbff;
       font-size:16px;
       padding:25px 0;
-      font-weight: bold;
 
       @media #{$gtDesktop}{
         padding:20px 0;
@@ -152,7 +151,7 @@ body {
 
   //GENERAL
   h1,h2,h3,h4,h5{
-    font-weight: bold;
+    font-weight: 100;
   }
 
   a:focus{
@@ -167,6 +166,7 @@ body {
     margin-bottom:30px;
     text-transform: uppercase;
     font-size:34px;
+    font-weight: normal;
 
     @media #{$mobile}{
       line-height:normal;
@@ -247,6 +247,8 @@ body {
       color:#33ccff;
       position:absolute;
       padding-left:15px;
+      font-family:'Special Elite', cursive;
+      font-size:42px;
 
       @media #{$mobile}{
         position:static;
@@ -256,7 +258,7 @@ body {
 
     a.big-link:hover{
       text-decoration: none;
-      font-size:36px;
+      font-size:46px;
     }
 
     div.widget.facebook{
@@ -573,10 +575,24 @@ body {
       }
 
       button.btn{
-        background-color:#55aadd;
+        background-color:#22bbff;
         color:white;
         font-size:16px;
         font-weight:bold;
+      }
+
+      input,textarea{
+        text-align:center;
+      }
+
+      .btn{
+        min-width:150px;
+        font-family: 'Special Elite', cursive;
+        line-height:22px;
+      }
+
+      .btn:hover{
+        opacity:0.8;
       }
     }
   }
@@ -640,9 +656,9 @@ body {
 
       .show{
         width:357px;
-        padding:0px 5px;
+        padding:0 5px;
         float:left;
-        margin: 20px 0px;
+        margin: 20px 0;
         border-right:1px solid white;
         font-family: 'Special Elite', cursive;
 
@@ -675,5 +691,17 @@ body {
     color:white;
     padding:25px 0;
     text-align: center;
+
+    .copyright{
+      margin-bottom:5px;
+    }
+
+    a{
+      color:#33ccff;
+    }
+    
+    a:hover{
+      text-decoration: none;
+    }
   }
 }

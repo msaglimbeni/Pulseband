@@ -1,54 +1,5 @@
 $(document).ready(function() {
 
-    //UPCOMING SHOWS
-
-    $('.left-contain > .left-arrow').click(function() {
-        var showStrip = $('.shows-strip'),
-            increment = showStrip.data('increment');
-
-        increment = parseInt(increment) + parseInt(showStrip.data('position'));
-        increment = increment + 'px';
-
-        if(parseInt(showStrip.css('left')) + parseInt(increment) > 0){
-            showStrip.css('left', 0);
-        }else{
-            showStrip.css('left', increment);
-        }
-
-        showStrip.data('position', showStrip.css('left'));
-
-    });
-
-    $('.right-contain > .right-arrow').click(function() {
-        var showStrip = $('.shows-strip'),
-            increment = '-' + showStrip.data('increment');
-
-        increment = parseInt(increment) + parseInt(showStrip.data('position'));
-        increment = increment + 'px';
-
-        containers = $('.show');
-
-        totalWidth = 0;
-        $.each(containers, function(index,show) {
-
-            totalWidth += parseInt($(show).css('width'));
-        });
-
-        totalWidth -= parseInt($('.shows').css('width'));
-        totalWidth = '-' + totalWidth;
-
-        //console.log(totalWidth);
-        //console.log('current left: ' + showStrip.css('left'));
-
-        if(parseInt(showStrip.css('left')) + parseInt(increment) < totalWidth){
-            showStrip.css('left', totalWidth+'px');
-        }else{
-            showStrip.css('left', increment);
-        }
-
-        showStrip.data('position', showStrip.css('left'));
-    });
-
 
     //GALLERY
 
@@ -87,11 +38,13 @@ $(document).ready(function() {
         client_id: "45d3103837ca07bf2c216ad5eaab651c"
     });
 
-    SC.get('/users/pulseband-2/tracks?limit=8', function(response, error) {
+    SC.get('/users/pulseband-2/tracks?limit=5', function(response, error) {
         $.each(response, function(index, soundcloud){
-            SC.oEmbed(soundcloud.uri, function(response) {
-                $('.song-player').append('<div class="song col-md-6">'+response.html+'</div>');
-            });
+            if(soundcloud.id !== 211639531){ //FUCK Around the world
+                SC.oEmbed(soundcloud.uri, function(response) {
+                    $('.song-player').append('<div class="song col-md-6">'+response.html+'</div>');
+                });
+            }
         });
     });
 
