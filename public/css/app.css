@@ -301,7 +301,10 @@ body {
         font-size: 16px;
         font-weight: bold; }
       body .contact-wrapper .contact-form input, body .contact-wrapper .contact-form textarea {
-        text-align: center; }
+        text-align: center;
+        min-height: 36px; }
+      body .contact-wrapper .contact-form textarea {
+        min-height: 100px; }
       body .contact-wrapper .contact-form .btn {
         min-width: 150px;
         font-family: 'Special Elite', cursive;

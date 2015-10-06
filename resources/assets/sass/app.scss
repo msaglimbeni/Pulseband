@@ -583,6 +583,11 @@ body {
 
       input,textarea{
         text-align:center;
+        min-height:36px;
+      }
+
+      textarea{
+        min-height:100px;
       }
 
       .btn{
