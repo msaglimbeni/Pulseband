@@ -17,7 +17,7 @@
         <link rel="stylesheet" type="text/css" href="{{asset('css/flexslider.css')}}" >
 
         <link rel="stylesheet" type="text/css" href="{{asset('css/app.css')}}" >
-        <link href="https://fonts.googleapis.com/css?family=Lato:100" rel="stylesheet" type="text/css">
+        <link href='https://fonts.googleapis.com/css?family=Lato:400,700,300' rel='stylesheet' type='text/css'>
         <link href='https://fonts.googleapis.com/css?family=Special+Elite' rel='stylesheet' type='text/css'>
 
     </head>
@@ -55,26 +55,26 @@
         <div class="show-hanger">
             <div class="container widget upcoming">
                 <div class="left-contain">
-                    <span class="left-arrow"> < </span>
+                    <span class="left-arrow">  </span>
                 </div>
 
                 <div class="center-contain">
                     <div class="shows">
                         <div class="shows-strip">
                             <div class="show">
-                                <div class="date">3 Friday, August 21st</div>
+                                <div class="date">Friday, August 21st</div>
                                 <div class="time">9pm - 1am</div>
                                 <div class="location">Monty's Gastropub - St. Catharines</div>
                             </div>
 
                             <div class="show">
-                                <div class="date">1 Saturday, September 26th</div>
+                                <div class="date">Saturday, September 26th</div>
                                 <div class="time">10pm - 2am</div>
                                 <div class="location">Cats Caboose - St. Catharines</div>
                             </div>
 
                             <div class="show last">
-                                <div class="date">2 Sunday, September 27th</div>
+                                <div class="date">Sunday, September 27th</div>
                                 <div class="time">2pm - 6pm</div>
                                 <div class="location">Donnellys Pub - Thorold</div>
                             </div>
@@ -85,7 +85,7 @@
                 </div>
 
                 <div class="right-contain">
-                    <span class="right-arrow"> > </span>
+                    <span class="right-arrow">  </span>
                 </div>
 
                 <div class="clear"></div>
@@ -300,15 +300,15 @@
             <form class="contact-form" method="post" action="/">
                 <input type="hidden" name="_token" value="{{ csrf_token() }}">
                 <div class="form-group">
-                    <label for="email-input">Email address</label>
+                    <label for="email-input" class="hidden">Email address</label>
                     <input type="email" class="form-control email" id="email-input" name="email" placeholder="Email">
                 </div>
                 <div class="form-group">
-                    <label for="phone-input">Phone </label>
+                    <label for="phone-input" class="hidden">Phone </label>
                     <input type="text" class="form-control phone" id="phone-input" name="phone" placeholder="Phone (Optional)">
                 </div>
                 <div class="form-group">
-                    <label for="message-input">Message</label>
+                    <label for="message-input" class="hidden">Message</label>
                     <textarea class="form-control message" id="message-input" name="message" placeholder="Message"></textarea>
                 </div>
                 <button type="submit" class="btn btn-default">Submit</button>
@@ -321,6 +321,7 @@
 
         <div class="container">
             <div class="copyright">Copyright &copy <?php echo date('Y'); ?></div>
+            <div class="crejudence">Website Developed by: <a href="https://github.com/t-hebert73" target="_blank"> Trevor Hebert </a> and <a href="https://github.com/msaglimbeni" target="_blank" > Max Saglimbeni</a></div>
         </div>
 
         <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
@@ -335,6 +336,18 @@
 
         <!-- Soundcloud SDK -->
         <script src="//connect.soundcloud.com/sdk-2.0.0.js"></script>
+
+        <script>
+            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+            })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+            ga('create', 'UA-59455628-1', 'auto');
+            ga('send', 'pageview');
+
+        </script>
+
     </footer>
 
     </body>

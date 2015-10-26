@@ -6,7 +6,7 @@ body {
   padding: 0;
   width: 100%;
   font-weight: 100;
-  font-family: 'Lato';
+  font-family: 'Lato', sans-serif;
   min-width: 360px; }
   @media (max-width: 767px) {
     body {
@@ -38,7 +38,6 @@ body {
   body .navbar #navbar ul.nav li a {
     color: white;
     padding: 25px 16px 27px;
-    font-weight: bold;
     font-size: 20px; }
     @media (min-width: 1200px) {
       body .navbar #navbar ul.nav li a {
@@ -55,8 +54,7 @@ body {
     float: right;
     color: #22bbff;
     font-size: 16px;
-    padding: 25px 0;
-    font-weight: bold; }
+    padding: 25px 0; }
     @media (min-width: 1200px) {
       body .navbar .email {
         padding: 20px 0;
@@ -65,7 +63,7 @@ body {
       body .navbar .email {
         display: none; } }
   body h1, body h2, body h3, body h4, body h5 {
-    font-weight: bold; }
+    font-weight: 100; }
   body a:focus {
     text-decoration: none; }
   body .clear {
@@ -73,7 +71,8 @@ body {
   body .sub-heading {
     margin-bottom: 30px;
     text-transform: uppercase;
-    font-size: 34px; }
+    font-size: 34px;
+    font-weight: normal; }
     @media (max-width: 767px) {
       body .sub-heading {
         line-height: normal; } }
@@ -125,14 +124,16 @@ body {
     body .social-wrapper a.big-link {
       color: #33ccff;
       position: absolute;
-      padding-left: 15px; }
+      padding-left: 15px;
+      font-family: 'Special Elite', cursive;
+      font-size: 42px; }
       @media (max-width: 767px) {
         body .social-wrapper a.big-link {
           position: static;
           padding-left: 0; } }
     body .social-wrapper a.big-link:hover {
       text-decoration: none;
-      font-size: 36px; }
+      font-size: 46px; }
     body .social-wrapper div.widget.facebook div.facebook-posts {
       font-family: 'Special Elite', cursive;
       margin-top: 30px; }
@@ -295,10 +296,21 @@ body {
         font-size: 16px;
         font-weight: bold; }
       body .contact-wrapper .contact-form button.btn {
-        background-color: #55aadd;
+        background-color: #22bbff;
         color: white;
         font-size: 16px;
         font-weight: bold; }
+      body .contact-wrapper .contact-form input, body .contact-wrapper .contact-form textarea {
+        text-align: center;
+        min-height: 36px; }
+      body .contact-wrapper .contact-form textarea {
+        min-height: 100px; }
+      body .contact-wrapper .contact-form .btn {
+        min-width: 150px;
+        font-family: 'Special Elite', cursive;
+        line-height: 22px; }
+      body .contact-wrapper .contact-form .btn:hover {
+        opacity: 0.8; }
   body .shows-wrapper {
     position: relative; }
   body .widget.upcoming {
@@ -339,9 +351,9 @@ body {
         left: 0; }
       body .show-hanger .shows .show {
         width: 357px;
-        padding: 0px 5px;
+        padding: 0 5px;
         float: left;
-        margin: 20px 0px;
+        margin: 20px 0;
         border-right: 1px solid white;
         font-family: 'Special Elite', cursive; }
         @media (min-width: 980px) and (max-width: 1199px) {
@@ -365,5 +377,11 @@ body {
     color: white;
     padding: 25px 0;
     text-align: center; }
+    body footer .copyright {
+      margin-bottom: 5px; }
+    body footer a {
+      color: #33ccff; }
+    body footer a:hover {
+      text-decoration: none; }
 
 /*# sourceMappingURL=app.css.map */
