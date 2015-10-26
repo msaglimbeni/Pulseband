@@ -2,52 +2,6 @@ $(document).ready(function() {
 
     //UPCOMING SHOWS
 
-    $('.left-contain > .left-arrow').click(function() {
-        var showStrip = $('.shows-strip'),
-            increment = showStrip.data('increment');
-
-        increment = parseInt(increment) + parseInt(showStrip.data('position'));
-        increment = increment + 'px';
-
-        if(parseInt(showStrip.css('left')) + parseInt(increment) > 0){
-            showStrip.css('left', 0);
-        }else{
-            showStrip.css('left', increment);
-        }
-
-        showStrip.data('position', showStrip.css('left'));
-
-    });
-
-    $('.right-contain > .right-arrow').click(function() {
-        var showStrip = $('.shows-strip'),
-            increment = '-' + showStrip.data('increment');
-
-        increment = parseInt(increment) + parseInt(showStrip.data('position'));
-        increment = increment + 'px';
-
-        containers = $('.show');
-
-        totalWidth = 0;
-        $.each(containers, function(index,show) {
-
-            totalWidth += parseInt($(show).css('width'));
-        });
-
-        totalWidth -= parseInt($('.shows').css('width'));
-        totalWidth = '-' + totalWidth;
-
-        //console.log(totalWidth);
-        //console.log('current left: ' + showStrip.css('left'));
-
-        if(parseInt(showStrip.css('left')) + parseInt(increment) < totalWidth){
-            showStrip.css('left', totalWidth+'px');
-        }else{
-            showStrip.css('left', increment);
-        }
-
-        showStrip.data('position', showStrip.css('left'));
-    });
 
 
     //GALLERY

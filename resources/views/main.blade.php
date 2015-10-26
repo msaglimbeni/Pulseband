@@ -60,7 +60,7 @@
 
                 <div class="center-contain">
                     <div class="shows">
-                        <div class="shows-strip" data-increment="360" data-position="0">
+                        <div class="shows-strip">
                             <div class="show">
                                 <div class="date">3 Friday, August 21st</div>
                                 <div class="time">9pm - 1am</div>
